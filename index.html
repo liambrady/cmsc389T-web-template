@@ -11,7 +11,7 @@
 
     <nav class="same-line">
         <div class="topnav left">
-            <a href="#home">YOUR NAME</a>
+            <a href="#home">Liam Brady</a>
         </div>
         <div class="topnav right">
             <a href="#home">Home</a>
@@ -26,23 +26,24 @@
     <section id="home">
 
         <div class="same-line-panel">
-            <img id="image" src=profile.png>
+            <img id="image" src=profile.jpg>
             <div class="center">
-                <h1>YOUR NAME</h1>
+                <h1>Liam Brady</h1>
                 <h2>Undergraduate Student</h2>
-                <h3>Majors, Minors</h3>
+                <h3>Computer Science, Mathematics</h3>
             </div>
 
         </div>
     </section>
-    <section id="about">
+    <section id="about"  style="background-color:#c1bae6;">
         <div class="container">
             <h1 class="section-header">About Me</h1>
         </div>
         <div class="same-line-panel reveal">
             <img id="logo" src=logo.png>
             <div class="panel">
-                <p>Put your Bio Here</p>
+              <p>Welcome! My name is Liam Brady and I’m a fledgling Computer Scientist who focuses on computer networks! Most recently, I have had the pleasure of interning at LabN Consulting L.L.C, a small network consulting company centered in the D.C. metro area. Contrary to their small size however, the impact of LabN Consulting is huge, working at the forefront of the industry with multiple leading experts in order to provide optimal solutions to their customers. In my case, I was tasked with creating a YANG model for OSPF in the open-sourced FRRouting project—which is one of the most advanced sets of routing simulation software in the world.</p>
+	      <p>Please note that this webpage was created as an in-class assignment and therefore likely contains out of date information!</p>
             </div>
 
         </div>
@@ -51,17 +52,23 @@
         <div class="container">
             <h1 class="section-header">Projects</h1>
             <div class="row">
-                <div class="column reveal" style="background-color:#A4969B;">
-                    <h2>Project 1 Title</h2>
-                    <p>Description of Project 1...</p>
+                <div class="column reveal" style="background-color:#a396e0;">
+                    <h2>Munet FRRouting OSPF Example Routing Topologies</h2>
+                    <p>A common tool for network engineers is virtual networking environments in which simulated network protocols can be run. One of the most common virtual environments is Mininet, which is extremely similar to a separate tool called munet (that my mentor created.) While there are many examples of FRR routing simulations for Mininet, there aren’t any for munet yet, which is why I was tasked with creating such example simulations for OSPF in munet. Such simulations cover a wide variety of OSPF topics, ranging from simple examples of configuring costs, stubs, or not-so-stubby-areas to more complex simulations in which I configure virtual-links and shortcuts. In addition, each of these simulations is accompanied by readme.md documents that provide an ASCII image of the network topology and explanation of the demonstrated features.</p>
+
+		 <p>The main purpose of this artifact is to display my experience with the OSPF routing protocol. Most clearly, it demonstrates my ability to configure the OSPF routing protocol on actual routers, which is a skill that is not necessarily associated with a theoretical understanding of the OSPF routing protocol. At the same time, it actually also does show my understanding of the OSPF routing protocol too, however. This is due to the detailed explanation accompanying each simulation’s respective OSPF feature. Together, then, this artifact is meant to demonstrate my comprehensive theoretical and practical understanding of OSPF.</p>
                 </div>
-                <div class="column reveal" style="background-color:#BFB5B9;">
-                    <h2>Project 2 Title</h2>
-                    <p>Description of Project 2...</p>
+                <div class="column reveal" style="background-color:#c1bae6;">
+                    <h2>CMSC417 Bittorrent Client</h2>
+                    <p>This BitTorrent client was the final project for CMSC417, a class also known as “Computer Networks.” Through this project, we had to design such a BitTorrent client capable from scratch with the stipulation that it must be able to properly communicate with other official BitTorrent clients. While BitTorrent clients may be most well known for their role in illegal online acts of piracy, BitTorrent clients actually are an extremely efficient method of downloading and uploading files from or to a large collective of other users. This project was completed as a group, in which I worked with three other students to complete the project in Python. Since I cannot provide unlimited access of this project (especially to other students,) I have submitted the report for this project instead.</p>
+
+		    <p>This artifact is meant to demonstrate three fundamental programming-related skills. First, it is meant to show my experience with socket-based programming. For the uninitiated, programs use ‘sockets’ to interface and communicate with larger computer networks (such as the internet.) Socket-based programming, therefore, is a fundamental skill if a programmer is to work on the integration of software in computer networks. Secondly, it is meant to show my understanding of threading, which is very important in allowing programs to run quickly. Since I was responsible for the portion of our program that needed to be kept thread safe, this program serves as a great example of this skill. Lastly, this project is meant to demonstrate my communication skills by providing an example project in which I worked with multiple other people to create a larger program. This is especially important in any coding-related field where there can be hundreds of people working on the same codebase to create complex programs.</p>
                 </div>
-                <div class="column reveal" style="background-color:#D1CACD;">
-                    <h2>Project 3 Title</h2>
-                    <p>Description of Project 3...</p>
+                <div class="column reveal" style="background-color:#d4d1e6;">
+                    <h2>FRRouting OSPFD YANG Model</h2>
+                    <p>This YANG model describes the OSPF daemon as present in the open-sourced FRRouting (FRR) project. FRR recently has undergone an effort to implement such YANG models as a base for their command-line interface commands (clicmds). This is in an attempt to make FRR more modulable in the long term, so that clicmds can be more easily run. As part of my internship experience this last summer, I was tasked with revisiting and updating the Open Shortest Path First (OSPF) YANG model already present in FRR. This was because the previous model was significantly outdated, both in regard to Internet Engineering Task Force (IETF) standards and the OSPF daemons construction.</p>
+
+		    <p>Given that the YANG data modeling language is becoming more and more widely accepted as the standard data modeling language in the field of computer networks, many employers are likely looking for YANG data modeling experience. This artifact, then, is important since it demonstrates my experience with such. In addition, the model demonstrates my understanding of the common OSPF routing protocol since many OSPF features appear in the YANG model to some extent. Since link-state routing protocols (including OSPF) are some of the most widely adopted routing protocols, demonstrating my knowledge of OSPF helps establish that I am familiar with fundamental network engineering concepts that are required of any network engineering position.</p>
                 </div>
             </div>
         </div>
@@ -69,14 +76,14 @@
 </body>
 <footer>
     <div class="leftFooter">
-        YOUREMAIL@EMAIL.COM
+        lbrady15@terpmail.umd.edu
     </div>
     <div class="rightFooter">
-        <a href="https://www.google.com/" class="fa fa-github" style="font-size:36px"></a>
+        <a href="https://www.github.com/liambrady/" class="fa fa-github" style="font-size:36px"></a>
 
     </div>
     <div class="rightFooterr">
-        <a href="https://www.google.com/" class="fa fa-linkedin" style="font-size:36px"></a>
+        <a href="https://www.linkedin.com/in/brady-liam/" class="fa fa-linkedin" style="font-size:36px"></a>
 
     </div>
 </footer>
