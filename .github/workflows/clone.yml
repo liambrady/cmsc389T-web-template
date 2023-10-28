@@ -8,13 +8,14 @@ jobs:
     steps:
       - name: testing
         uses: appleboy/ssh-action@master
+        env:
+            USERNAME: ${{ secrets.USERNAME }}
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          env:
-            USERNAME: '${{ secrets.USERNAME }}'
+          
           script: |
             cd ../pub/${USERNAME}
             ls
