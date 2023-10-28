@@ -14,7 +14,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           env:
-            USERNAME: ${{ secrets.USERNAME }}
+            USERNAME: '${{ secrets.USERNAME }}'
           script: |
             cd ../pub/${USERNAME}
             ls
