@@ -15,8 +15,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          
           script: |
-            cd ../pub/${USERNAME}
-            ls
-            echo git clone git@github.com:liambrady/cmsc389T-web-template.git
+            git clone git@github.com:liambrady/cmsc389T-web-template.git
