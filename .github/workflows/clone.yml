@@ -3,17 +3,19 @@ on:
   workflow_dispatch:
 jobs:
   job_one:
-   name: Clone
-   runs-on: ubuntu-latest
-   steps:
-     - name: testing
-       uses: appleboy/ssh-action@master
-       with:
-         host: ${{ secrets.HOST }}
-         username: ${{ secrets.USERNAME }}
-         password: ${{ secrets.PASSWORD }}
-         port: ${{ secrets.PORT }}
-         script: |
-	   cd ../pub/${{ secrets.USERNAME }}
-	   ls
-           #git clone git@github.com:liambrady/cmsc389T-web-template.git
+    name: Clone
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          env:
+            USERNAME: ${{ secrets.USERNAME }}
+          script: |
+            cd ../pub/${USERNAME}
+            ls
+            echo git clone git@github.com:liambrady/cmsc389T-web-template.git
