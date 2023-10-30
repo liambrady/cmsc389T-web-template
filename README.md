@@ -8,3 +8,9 @@ like. In addition to this, however, I also made small edits to the size of
 the project description background boxes to fit the large amount of text
 included to describe some of the projects I have previously worked on. All of
 this occured primarily within the CSS of the webpage.
+
+GitHub Hosted Webpage:
+https://liambrady.github.io/cmsc389T-web-template/
+
+Terpconnect Hosted Webpage: (Note that this version cannot be updated due to Duo 2FA)
+https://terpconnect.umd.edu/~lbrady15/cmsc389T-web-template/
